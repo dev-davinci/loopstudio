@@ -1,0 +1,244 @@
+/** GLOBAL STYLES **/
+
+/**
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+**/
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-grey: hsl(0, 0%, 55%);
+  --color-dark-grey: hsl(0, 0%, 41%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+p {
+  font-size: 15px;
+}
+
+/** HEADER SECTION **/
+
+.header {
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 85vh;
+}
+
+.header__content {
+  padding: 0;
+}
+
+.header__heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: var(--color-white);
+  text-transform: uppercase;
+  border: 0.5px solid var(--color-white);
+  padding: 30px;
+}
+.navbar {
+  padding-left: 0;
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--color-white);
+  font-family: "Alata", sans-serif;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  border-bottom: 1px solid var(--color-white);
+}
+
+/** LEADERS SECTION **/
+
+.leaders {
+  margin: 110px auto;
+}
+
+.leaders__image {
+  height: 100%;
+  width: 100%;
+}
+.leaders__image img {
+  width: 100%;
+}
+
+.leaders__description {
+  background-color: var(--color-white);
+  padding: 70px;
+  text-align: center;
+}
+
+.leaders__heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.leaders__paragraph {
+  color: var(--color-grey);
+  line-height: 1.7;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1066px) {
+  .leaders {
+    position: relative;
+  }
+  .leaders__description {
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    width: 500px;
+    height: 400px;
+    text-align: left;
+  }
+  .leaders__paragraph {
+    font-size: 15px;
+  }
+}
+
+/** OUR CREATIONS SECTION **/
+
+.creations {
+  margin: 110px auto;
+}
+
+.creations__heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: left im !important;
+}
+
+.creations__link:link,
+.creations__link:visited {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  padding: 8px 20px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: right;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.creations__link:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+.creations__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  z-index: 6;
+  color: var(--color-white);
+  left: 40px;
+  bottom: 40px;
+  font-weight: bold;
+}
+.creations img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.img-box {
+  transition: 0.3s;
+}
+.img-box:hover {
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 774px) {
+  .creations .container .creations__content > .row .col-md-6 {
+    text-align: center;
+  }
+}
+
+/** FOOTER SECTION **/
+
+.footer {
+  background-color: var(--color-black);
+  padding: 30px 0;
+}
+
+.footer__social {
+  text-align: right;
+  font-size: 22px;
+}
+.footer__social li {
+  margin: 5px 15px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer ul li {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.footer ul li:hover {
+  border-bottom: 1px solid var(--color-white);
+}
+
+.footer__nav {
+  font-size: 15px;
+}
+
+.footer__nav li {
+  margin-right: 15px;
+  font-family: "Alata", sans-serif;
+}
+
+.footer__copyright {
+  color: var(--color-white);
+  text-align: right;
+}
+
+@media screen and (max-width: 774px) {
+  .footer ul {
+    text-align: center;
+  }
+  .footer__copyright {
+    text-align: center;
+  }
+  .footer__logo img {
+    text-align: center;
+  }
+}
